@@ -1,0 +1,37 @@
+body {
+    font-family: "Noto Sans Bengali", sans-serif;
+    background: #fefefe;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background: #4e7cff;
+    color: white;
+    padding: 20px;
+    border-radius: 0 0 20px 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+section {
+    margin: 30px;
+    padding: 20px;
+}
+
+.photo {
+    width: 80%;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+footer {
+    background: #eee;
+    padding: 10px;
+    font-size: 14px;
+}
