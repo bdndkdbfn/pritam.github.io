@@ -3,98 +3,124 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pritam's Book World</title>
+<title>Pritam Times</title>
 
 <style>
-  /* Whole Page */
+  /* ----- Page Style ----- */
   body {
     font-family: "Georgia", serif;
-    background-color: #f7f5ef;
+    background-color: #f5f3ef;
     margin: 0;
     padding: 0;
     color: #222;
   }
 
-  /* Website Header */
+  /* ----- Website Header ----- */
   header {
-    background: #3e2f1c;
-    color: #fff;
     text-align: center;
+    background-color: #2f2f2f;
+    color: white;
     padding: 30px 10px;
-    font-size: 28px;
-    font-weight: bold;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 36px;
     letter-spacing: 1px;
   }
 
-  /* Article (Book Page) */
-  article {
-    max-width: 750px;
-    background: #fff;
-    margin: 40px auto;
-    padding: 40px;
-    line-height: 1.8;
+  header p {
+    margin: 8px 0 0;
     font-size: 18px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    color: #ccc;
+    font-style: italic;
   }
 
-  /* Chapter Heading */
-  h1 {
-    text-align: center;
-    font-size: 26px;
-    margin-bottom: 20px;
-    color: #3e2f1c;
+  /* ----- Article Section ----- */
+  main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
   }
 
-  /* Book Image */
-  .book-cover {
-    display: block;
-    margin: 0 auto 25px auto;
+  article {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+    overflow: hidden;
+  }
+
+  article img {
     width: 100%;
-    max-width: 400px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    height: auto;
+    display: block;
   }
 
-  /* Paragraphs */
-  p {
+  article .content {
+    padding: 25px 30px;
+  }
+
+  article h2 {
+    font-size: 26px;
+    margin-top: 0;
+    color: #333;
+  }
+
+  article p {
     text-align: justify;
-    text-indent: 40px;
-    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-top: 10px;
   }
 
-  /* Footer */
+  /* ----- Footer ----- */
   footer {
     text-align: center;
     color: #666;
+    padding: 20px 0 40px;
     font-size: 14px;
-    margin-bottom: 30px;
   }
 </style>
 </head>
 
 <body>
 
-  <!-- Website Name -->
+  <!-- Website Header -->
   <header>
-    📚 Pritam’s Book World
+    <h1>Pritam Times</h1>
+    <p>Your daily dose of thought and story</p>
   </header>
 
-  <!-- Book Article -->
-  <article>
-    <h1>Chapter 1: The Beginning</h1>
+  <!-- Main Article Section -->
+  <main>
     
-    <!-- Book or Chapter Image -->
-    <img src="book1.jpg" alt="Book cover" class="book-cover">
+    <!-- Article 1 -->
+    <article>
+      <img src="news1.jpg" alt="Morning View">
+      <div class="content">
+        <h2>The Calm Before the Dawn</h2>
+        <p>It was an unusually quiet morning. The city, usually filled with noise and motion, seemed to be holding its breath. Sunlight crawled through the narrow streets, and the world looked newer, fresher—almost innocent again.</p>
+        <p>In a small tea shop by the corner, people whispered about the coming changes. Some believed it would be a good day, others were not so sure. But one thing was certain — the morning had already written the first line of today’s story.</p>
+      </div>
+    </article>
 
-    <p>It was a calm morning when the first light touched the hills. The village woke slowly, as though still caught between dreams and daylight...</p>
-    
-    <p>As the wind passed through the trees, it whispered secrets that only time could understand. This was where our story began.</p>
-  </article>
+    <!-- Article 2 -->
+    <article>
+      <img src="news2.jpg" alt="Village Life">
+      <div class="content">
+        <h2>Whispers of the Old Village</h2>
+        <p>The fields stretched endlessly under the golden light. Every sound, from the rustle of leaves to the distant cowbell, told a story of a life that moved slowly, peacefully. In these moments, time seemed to bow to nature.</p>
+        <p>Children ran barefoot on dusty roads, and laughter filled the air. The old banyan tree stood silently — witness to a thousand untold tales.</p>
+      </div>
+    </article>
+
+  </main>
 
   <!-- Footer -->
   <footer>
-    © 2025 Pritam’s Book World — All rights reserved.
+    © 2025 Pritam — All rights reserved.
   </footer>
 
 </body>
