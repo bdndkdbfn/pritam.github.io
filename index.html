@@ -3,47 +3,99 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Book</title>
+<title>Pritam's Book World</title>
+
 <style>
+  /* Whole Page */
   body {
     font-family: "Georgia", serif;
-    background-color: #fdfcf8;
-    color: #222;
+    background-color: #f7f5ef;
     margin: 0;
     padding: 0;
+    color: #222;
   }
 
+  /* Website Header */
+  header {
+    background: #3e2f1c;
+    color: #fff;
+    text-align: center;
+    padding: 30px 10px;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+
+  /* Article (Book Page) */
   article {
-    max-width: 700px;     /* like a book page width */
-    margin: 50px auto;    /* center the article */
+    max-width: 750px;
+    background: #fff;
+    margin: 40px auto;
     padding: 40px;
     line-height: 1.8;
     font-size: 18px;
-    background: #fff;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
     border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
   }
 
+  /* Chapter Heading */
   h1 {
     text-align: center;
-    font-size: 28px;
-    margin-bottom: 30px;
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #3e2f1c;
   }
 
+  /* Book Image */
+  .book-cover {
+    display: block;
+    margin: 0 auto 25px auto;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  }
+
+  /* Paragraphs */
   p {
     text-align: justify;
-    text-indent: 40px;   /* indent like a book */
+    text-indent: 40px;
+    margin-bottom: 20px;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 30px;
   }
 </style>
 </head>
+
 <body>
 
-<article>
-  <h1>Chapter 1: The Beginning</h1>
-  <p>It was a calm morning when the first light touched the hills. The village woke slowly, as though still caught between dreams and daylight...</p>
-  
-  <p>As the wind passed through the trees, it whispered secrets that only time could understand. This was where our story began.</p>
-</article>
+  <!-- Website Name -->
+  <header>
+    📚 Pritam’s Book World
+  </header>
+
+  <!-- Book Article -->
+  <article>
+    <h1>Chapter 1: The Beginning</h1>
+    
+    <!-- Book or Chapter Image -->
+    <img src="book1.jpg" alt="Book cover" class="book-cover">
+
+    <p>It was a calm morning when the first light touched the hills. The village woke slowly, as though still caught between dreams and daylight...</p>
+    
+    <p>As the wind passed through the trees, it whispered secrets that only time could understand. This was where our story began.</p>
+  </article>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Pritam’s Book World — All rights reserved.
+  </footer>
 
 </body>
 </html>
