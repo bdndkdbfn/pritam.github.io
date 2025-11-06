@@ -35,3 +35,53 @@ footer {
     padding: 10px;
     font-size: 14px;
 }
+/* Basic styling for enquiry box */
+.enquiry-box {
+  width: 90%;
+  max-width: 400px;
+  margin: 50px auto;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.enquiry-box h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.enquiry-box input,
+.enquiry-box textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.enquiry-box button {
+  width: 100%;
+  padding: 10px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.enquiry-box button:hover {
+  background: #45a049;
+}
+
+#response {
+  text-align: center;
+  margin-top: 15px;
+  color: #007BFF;
+  font-weight: bold;
+}
