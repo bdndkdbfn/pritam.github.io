@@ -1,5 +1,3 @@
-alert("JavaScript connected successfully!");
-// Wait until page fully loads
 document.addEventListener("DOMContentLoaded", function () {
 
   const nameInput = document.getElementById("name");
@@ -17,11 +15,9 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
 
-    // Show confirmation message
     responseBox.style.color = "green";
     responseBox.textContent = `Thank you, ${name}! Your enquiry has been submitted.`;
 
-    // Clear the form
     nameInput.value = "";
     enquiryInput.value = "";
   });
