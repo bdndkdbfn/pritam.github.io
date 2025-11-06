@@ -1,3 +1,4 @@
+alert("JavaScript file loaded successfully!");
 document.addEventListener("DOMContentLoaded", function () {
   const nameInput = document.getElementById("name");
   const enquiryInput = document.getElementById("enquiry");
