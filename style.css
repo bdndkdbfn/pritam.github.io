@@ -36,35 +36,58 @@ footer {
     font-size: 14px;
 }
 /* Basic styling for enquiry box */
-form {
-  width: 300px;
-  margin: 30px auto;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
-input, textarea {
-  padding: 8px;
+.enquiry-box {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  text-align: center;
+}
+
+.enquiry-box h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 8px;
+  font-size: 14px;
+  resize: none;
 }
 
 button {
-  background-color: #0066ff;
+  width: 100%;
+  background-color: #007bff;
   color: white;
   border: none;
-  padding: 8px;
-  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #004ecc;
+  background-color: #0056b3;
 }
 
 #response {
-  text-align: center;
-  margin-top: 10px;
+  margin-top: 12px;
   font-weight: bold;
 }
