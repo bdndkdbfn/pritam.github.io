@@ -36,14 +36,6 @@ footer {
     font-size: 14px;
 }
 /* Basic styling for enquiry box */
-body {
-  background: #f9f9f9;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
 .enquiry-box {
   background: white;
   padding: 20px;
