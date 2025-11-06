@@ -1,37 +1,27 @@
-// script.js
+// Wait until page fully loads
+document.addEventListener("DOMContentLoaded", function () {
 
-document.addEventListener("DOMContentLoaded", function() {
-  const form = document.getElementById("enquiryForm");
   const nameInput = document.getElementById("name");
-  const messageInput = document.getElementById("message");
+  const enquiryInput = document.getElementById("enquiry");
+  const submitBtn = document.getElementById("submit");
   const responseBox = document.getElementById("response");
 
-  if (!form) {
-    console.error("Form with id 'enquiryForm' not found!");
-    return;
-  }
-
-  form.addEventListener("submit", function(event) {
-    event.preventDefault(); // stop page reload
-
+  submitBtn.addEventListener("click", function () {
     const name = nameInput.value.trim();
-    const message = messageInput.value.trim();
+    const enquiry = enquiryInput.value.trim();
 
-    if (name === "" || message === "") {
-      responseBox.innerHTML = "<p style='color:red;'>Please fill all fields!</p>";
+    if (name === "" || enquiry === "") {
+      responseBox.textContent = "Please fill in all fields.";
+      responseBox.style.color = "red";
       return;
     }
 
-    // Show the enquiry on the screen
-    responseBox.innerHTML = `
-      <h4>✅ Enquiry Received</h4>
-      <p><strong>Name:</strong> ${name}</p>
-      <p><strong>Message:</strong> ${message}</p>
-      <p style="color:green;">Thank you for your message!</p>
-    `;
+    // Show confirmation message
+    responseBox.style.color = "green";
+    responseBox.textContent = `Thank you, ${name}! Your enquiry has been submitted.`;
 
-    // Clear inputs
+    // Clear the form
     nameInput.value = "";
-    messageInput.value = "";
+    enquiryInput.value = "";
   });
 });
