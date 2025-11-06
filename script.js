@@ -1,3 +1,4 @@
+alert("JavaScript connected successfully!");
 // Wait until page fully loads
 document.addEventListener("DOMContentLoaded", function () {
 
