@@ -36,7 +36,7 @@ footer {
     font-size: 14px;
 }
 /* Basic styling for enquiry box */
-header {
+body {
   font-family: Arial, sans-serif;
   background: #f9f9f9;
   display: flex;
@@ -50,21 +50,31 @@ header {
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  width: 300px;
-  text-align: center;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;   /* mobile এ row থেকে column এ যাবে */
 }
 
 .enquiry-box h2 {
-  margin-bottom: 15px;
+  flex-basis: 100%;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .enquiry-box input,
 .enquiry-box textarea {
-  width: 90%;
-  margin: 10px 0;
+  width: 200px;
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 6px;
+  resize: none;
+}
+
+#enquiry {
+  height: 40px;
 }
 
 #submit {
@@ -81,6 +91,22 @@ header {
 }
 
 #response {
-  margin-top: 15px;
+  flex-basis: 100%;
+  text-align: center;
+  margin-top: 10px;
   font-weight: bold;
+}
+
+/* 📱 Responsive Design: Mobile এ column format */
+@media (max-width: 600px) {
+  .enquiry-box {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .enquiry-box input,
+  .enquiry-box textarea,
+  #submit {
+    width: 100%;
+  }
 }
