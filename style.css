@@ -230,11 +230,11 @@ footer {
 .scroll p {
   display: inline-block;
   white-space: nowrap;
-  animation: scroll 35s linear infinite;
+  animation: scroll 45s linear infinite;
   margin: 0;
 }
 
 @keyframes scroll {
-  0% { transform: translateX(100%); }
+  0% { transform: translateX(0%); }
   100% { transform: translateX(-100%); }
 }
